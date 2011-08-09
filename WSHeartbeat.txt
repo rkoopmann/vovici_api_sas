@@ -1,0 +1,7 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:efm="http://desktop.vovici.com/EFMWebTopSvc">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <efm:WSHeartbeat/>
+   </soapenv:Body>
+</soapenv:Envelope>
