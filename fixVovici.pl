@@ -28,6 +28,7 @@ if($tidy =~ /[tT]/) {
 
 if($quotes =~ /[tT]/) {
   $hold =~ s/’/'/g;             # right curly single quote
+  $hold =~ s/’/'/g;             # another right curly quote?
   $hold =~ s/“/"/g;             # left curly double quote
   $hold =~ s/”/"/g;             # right curly double quote
   $hold =~ s/–/-/g;             # endash
@@ -36,6 +37,8 @@ if($quotes =~ /[tT]/) {
   $hold =~ s/©/\(C\)/g;         # copyright
   $hold =~ s/®/\(R\)/g;         # registered
   $hold =~ s/™/\(TM\)/g;        # trademark
+  $hold =~ s/â€™//g;            # mysterious replacement that must die a slow, painful death
+  $hold =~ s/â€ƒ//g;            # ibid
   }
   
 if($unencapsulate =~ /[tT]/) {

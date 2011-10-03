@@ -1,0 +1,14 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:efm="http://desktop.vovici.com/EFMWebTopSvc">
+   <soapenv:Header>
+      <efm:WSAuthHeader>
+         <efm:User>&USER</efm:User>
+         <efm:Password>&PASSWORD</efm:Password>
+      </efm:WSAuthHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+    <WSSurveyGet xmlns="http://desktop.vovici.com/EFMWebTopSvc">
+      <surveyId>&SURVEYID</surveyId>
+    </WSSurveyGet>
+  </soapenv:Body>
+</soapenv:Envelope>
