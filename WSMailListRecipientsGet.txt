@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:efm="http://desktop.vovici.com/EFMWebTopSvc">
+   <soapenv:Header>
+      <efm:WSAuthHeader>
+         <efm:User>&USER</efm:User>
+         <efm:Password>&PASSWORD</efm:Password>
+      </efm:WSAuthHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <efm:WSMailListRecipientsGet>
+         <efm:mailingListId>&MAILINGLISTID</efm:mailingListId>
+         <efm:includeUdfData>&INCLUDEUDFDATA</efm:includeUdfData>
+         <efm:listFilters>&LISTFILTERS</efm:listFilters>
+         <efm:pageSize>&PAGESIZE</efm:pageSize>
+         <efm:pageNumber>&PAGENUMBER</efm:pageNumber>
+         <efm:sortColumn>&SORTCOLUMN</efm:sortColumn>
+      </efm:WSMailListRecipientsGet>
+   </soapenv:Body>
+</soapenv:Envelope>
